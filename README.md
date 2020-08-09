@@ -1,6 +1,6 @@
 # isOBS
 
-* [DEMO](https://eotones.github.io/isOBS/index.html)
+* [DEMO](https://eotones.github.io/isOBS/)
 
 ## Reference
 
