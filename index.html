@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isOBS DEMO</title>
+    
+    <style>
+        body {
+            color: #fff;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        
+        #output {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>isOBS DEMO</h1>
+    <div id="output"></div>
+
+    <script src="isOBS.js"></script>
+    <script>
+        (function(){
+            let output = document.querySelector("#output");
+            
+            if( isOBS() === true ){
+                // is OBS browser
+                output.textContent = `OBS Browser plugin version: ${window.obsstudio.pluginVersion}`
+            }else{
+                // other browser
+                output.textContent = `other browser`
+            }
+        })();
+    </script>
+</body>
+</html>
